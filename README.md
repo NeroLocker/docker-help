@@ -1,5 +1,38 @@
 # docker-help
 Заметки по использованию docker 17.06.2-ce на Ubuntu 18.04 LTS
+# Установка Docker Community Edition на Ubuntu 18.04 LTS (bionic)
+	```
+	sudo apt-get update
+	```
+	
+	```
+	sudo apt-get install \
+    	apt-transport-https \
+    	ca-certificates \
+    	curl \
+    	software-properties-common
+	```
+	
+	```
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	```
+	
+	```
+	sudo add-apt-repository \
+   	"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   	$(lsb_release -cs) \
+   	stable"
+	```
+	
+	```
+	sudo apt-get update
+	```
+	
+	```
+	sudo apt-get install docker-ce
+	```
+Docker установлен.
+	
 # Список активных и неактивных контейнеров:
 	```
 	$ sudo docker container ls -a
