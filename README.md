@@ -1,5 +1,5 @@
 # docker-help
-Заметки по использованию docker на Ubuntu 18.04 LTS
+Заметки по использованию docker 17.06.2-ce на Ubuntu 18.04 LTS
 # Список активных и неактивных контейнеров:
 	```
 	$ sudo docker container ls -a
