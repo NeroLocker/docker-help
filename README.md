@@ -1,6 +1,6 @@
 # docker-help
-Заметки по использованию docker 17.06.2-ce на Ubuntu 18.04 LTS
-# Установка Docker Community Edition на Ubuntu 18.04 LTS (bionic)
+Заметки по использованию docker 18.06.1-ce на Ubuntu 18.04.1 LTS (bionic)
+## Установка Docker Community Edition на Ubuntu 18.04 LTS (bionic)
 	```
 	sudo apt-get update
 	```
@@ -33,31 +33,32 @@
 	```
 Docker установлен.
 	
-# Список активных и неактивных контейнеров:
+# Команды
+## Список активных и неактивных контейнеров:
 	```
 	$ sudo docker container ls -a
 	```
-# Запуск имеджа:
+## Запуск имеджа:
 	```
 	$ sudo docker run IMAGE_NAME
 	```
-# Билдинг имеджа с использованием тега, по которому позже его можно будет запускать. Имедж сбилдится только в том случае, если в директории есть Dockerfile:
+## Билдинг имеджа с использованием тега, по которому позже его можно будет запускать. Имедж сбилдится только в том случае, если в директории есть Dockerfile:
 	```
 	$ sudo docker build -t YOUR_TAG_NAME .
 	```
-# Запуск имеджа с пробросом портов на хостовую машину:
+## Запуск имеджа с пробросом портов на хостовую машину:
 	```
 	$ sudo docker run -p 4000:80 IMAGE_NAME
 	```
-# Запуск в Detached-mode:
+## Запуск в Detached-mode:
 	```
 	$ sudo docker run -d -p 4000:80 IMAGE_NAME
 	```
-# Остановка контейнера:
+## Остановка контейнера:
 	```
 	$ sudo docker container stop CONTAINER_ID
 	```
-# Решение ошибки “Error checking context on docker build”:
+## Решение ошибки “Error checking context on docker build”:
 	```
 	$ sudo chown root.root -R ../APP_NAME
 	```
