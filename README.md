@@ -62,3 +62,11 @@ Docker установлен.
 	```
 	$ sudo chown root.root -R ../APP_NAME
 	```
+## Удаление неиспользуемых данных
+	```
+	$ docker system prune
+	```
+## Удаление неиспользуемых томов
+	```
+	$ docker volume prune
+	```
